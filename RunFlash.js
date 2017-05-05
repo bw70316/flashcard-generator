@@ -42,7 +42,8 @@ var newQuestion = new BasicCard(basicCardsArr[i].front, basicCardsArr[i].back);
 };
 //I thought this would let me create new constructors based on my other array,
 //but I deleted it and it worked fine, so I guess i'm not really using constructors
-
+//I did have my BasicCard working through the exports, but I realize now i'm not channeling
+// that at all anymore.
 
 var count = 0;
 
@@ -116,14 +117,17 @@ function askQuestion() {
 	}
 }
 
-//^^ this function loops through my array 
+//^^ this function loops through my array of questions and displays the front, 
+//then takes the answer and judges it against the back answer. If they are the same
+//it logs correct, otherwise it is wrong, and it moves on to the next question
 
-//askQuestion();
+// askQuestion();
 
 
 //I was using recursion here earlier, but when I implemented my selectGame()
 //function it would start the askQuesion part of the game on top of the options.
 // I got super stuck on this, if I didnt waste all that time, I would figure this out.
+//
 
 
 	
